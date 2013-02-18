@@ -1,0 +1,19 @@
+= horizontal_form_for @certificate do |f|
+	- if @certificate.errors.any?
+		#error_explanation
+			%h2= "#{pluralize(@certificate.errors.count, "error")} prohibited this certificate from being saved:"
+			%ul
+				- @certificate.errors.full_messages.each do |msg|
+					%li= msg
+
+	= f.editor_for :name
+	= f.editor_for :common_name
+	= f.editor_for :email
+	= f.control_group_for :issuer_certificate do |field|
+		= field.collection_select @issuer_certificates, :id, :name
+	= f.editor_for :expires
+	= f.editor_for :is_ca
+
+	.control-group
+		.controls
+			= f.submit 'Save'

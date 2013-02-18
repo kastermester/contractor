@@ -1,0 +1,6 @@
+%p#notice= notice
+
+
+= link_to 'Revoke', @certificate, method: :delete, data: { confirm: 'Are you sure?' }
+\|
+= link_to 'Back', certificates_path

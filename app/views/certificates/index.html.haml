@@ -1,0 +1,35 @@
+%h1 Listing certificates
+
+%table.table.table-condensed.table-striped.table-hover
+	%thead
+		%tr.success
+			%td
+				= link_to 'New Certificate', new_certificate_path, :class => 'btn btn-mini btn-primary'
+			%td
+			%td
+			%td
+		%tr
+			%th= "Name"
+			%th= "Common name"
+			%th= "Is CA"
+			%th
+			%th
+	%tfoot
+		%tr.success
+			%td
+				= link_to 'New Certificate', new_certificate_path, :class => 'btn btn-mini btn-primary'
+			%td
+			%td
+			%td
+	%tbody
+
+		- @certificates.each do |certificate|
+			%tr
+				%td= link_to certificate.name, certificate
+				%td= link_to certificate.common_name, certificate
+				%td= certificate.is_ca ? "Yes" : "No"
+				%td= link_to 'Revoke', certificate, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Certificate', new_certificate_path

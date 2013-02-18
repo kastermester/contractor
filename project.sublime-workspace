@@ -1,0 +1,1089 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"initP",
+				"initPlayerState"
+			],
+			[
+				"player",
+				"playerid"
+			],
+			[
+				"is",
+				"isActive"
+			],
+			[
+				"init",
+				"initEventListiners"
+			],
+			[
+				"pla",
+				"playerid"
+			],
+			[
+				"ca",
+				"callback"
+			],
+			[
+				"lo",
+				"localhost"
+			],
+			[
+				"Update",
+				"UpdateData"
+			],
+			[
+				"Upda",
+				"UpdateData"
+			],
+			[
+				"Remo",
+				"RemoveData"
+			],
+			[
+				"Re",
+				"ReadData"
+			],
+			[
+				"Con",
+				"ControlPower"
+			],
+			[
+				"Ac",
+				"ActivateWindow"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"cal",
+				"callback"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"SetM",
+				"SetMusicVideoDetails"
+			],
+			[
+				"Rem",
+				"RemoveEpisode"
+			],
+			[
+				"Get",
+				"GetTVShows"
+			],
+			[
+				"GetT",
+				"GetTVShowDetails"
+			],
+			[
+				"GetR",
+				"GetRecentlyAddedMusicVideos"
+			],
+			[
+				"GetRe",
+				"GetRecentlyAddedEpisodes"
+			],
+			[
+				"GetMu",
+				"GetMusicVideos"
+			],
+			[
+				"GetMo",
+				"GetMovieSets"
+			],
+			[
+				"GetM",
+				"GetMovieSetDetails"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"even",
+				"event"
+			],
+			[
+				"unb",
+				"unbindAll"
+			],
+			[
+				"_",
+				"_API"
+			],
+			[
+				"un",
+				"unbind"
+			],
+			[
+				"eb",
+				"eObj"
+			],
+			[
+				"con",
+				"contains"
+			],
+			[
+				"nm",
+				"namespace"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"nam",
+				"namespace"
+			],
+			[
+				"name",
+				"namespacedEventBindings"
+			],
+			[
+				"na",
+				"namespace"
+			],
+			[
+				"nma",
+				"namespacedEventBindings"
+			],
+			[
+				"unl",
+				"unless"
+			],
+			[
+				"_run",
+				"_runCallbacks"
+			],
+			[
+				"_c",
+				"_createEventCallback"
+			],
+			[
+				"event",
+				"eventBindings"
+			],
+			[
+				"cl",
+				"client"
+			],
+			[
+				"mov",
+				"moviesPerPage"
+			],
+			[
+				"mo",
+				"moviesLeft"
+			],
+			[
+				"l",
+				"limits"
+			],
+			[
+				"movi",
+				"movieLimits"
+			],
+			[
+				"Vi",
+				"VideoLibrary"
+			],
+			[
+				"vi",
+				"videolibrary"
+			],
+			[
+				"de",
+				"defer"
+			],
+			[
+				"ws",
+				"wsClient"
+			],
+			[
+				"S",
+				"style"
+			],
+			[
+				"va",
+				"valueOf"
+			],
+			[
+				"in",
+				"included"
+			],
+			[
+				"re",
+				"recieve"
+			],
+			[
+				"sear",
+				"searchPlaceholder"
+			],
+			[
+				"sea",
+				"searchPlaceholder"
+			],
+			[
+				"_s",
+				"_subscriptions"
+			],
+			[
+				"search",
+				"searchDelayed"
+			],
+			[
+				"Hom",
+				"HomeViewModel"
+			],
+			[
+				"bin",
+				"bindingsAppliedAndAddedToDOM"
+			],
+			[
+				"isA",
+				"_isAddedToDOM"
+			],
+			[
+				"bindings",
+				"bindingsApplied"
+			],
+			[
+				"inn",
+				"inner"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"_is",
+				"_isBindingsApplied"
+			],
+			[
+				"binding",
+				"bindingContext"
+			],
+			[
+				"atta",
+				"attachToDOM"
+			],
+			[
+				"aut",
+				"autoAttachToDOM"
+			],
+			[
+				"appl",
+				"applyBindings"
+			],
+			[
+				"bind",
+				"bindingInDOM"
+			],
+			[
+				"reo",
+				"resolveBindingContext"
+			],
+			[
+				"elem",
+				"elementInDOM"
+			],
+			[
+				"add",
+				"addedToDOM"
+			],
+			[
+				"comp",
+				"computed"
+			],
+			[
+				"ac",
+				"activeViewModel"
+			],
+			[
+				"ex",
+				"exact"
+			],
+			[
+				"sta",
+				"startsWith"
+			],
+			[
+				"st",
+				"startsWith"
+			],
+			[
+				"new",
+				"newValue"
+			],
+			[
+				"resol",
+				"resolveBindingContext"
+			],
+			[
+				"reso",
+				"resolveBindingContext"
+			],
+			[
+				"sub",
+				"subscriptions"
+			],
+			[
+				"subsc",
+				"subscriptions"
+			],
+			[
+				"active",
+				"activeViewModel"
+			],
+			[
+				"pr",
+				"previousViewModel"
+			],
+			[
+				"vie",
+				"viewmodels"
+			],
+			[
+				"dis",
+				"disposed"
+			],
+			[
+				"_r",
+				"_resolveContainer"
+			],
+			[
+				"_re",
+				"_render"
+			],
+			[
+				"view",
+				"viewmodel"
+			],
+			[
+				"ins",
+				"instanceof"
+			],
+			[
+				"au",
+				"autoAttachToDOM"
+			],
+			[
+				"at",
+				"attachToDOM"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"render",
+				"rendered"
+			],
+			[
+				"af",
+				"afterRender"
+			],
+			[
+				"rende",
+				"rendered"
+			],
+			[
+				"des",
+				"destFile"
+			],
+			[
+				"copyFil",
+				"copyFileSync"
+			],
+			[
+				"src",
+				"srcFile"
+			],
+			[
+				"dir",
+				"dirname"
+			],
+			[
+				"inp",
+				"inputDir"
+			],
+			[
+				"outp",
+				"output"
+			],
+			[
+				"com",
+				"compile"
+			],
+			[
+				"ini",
+				"initRoute"
+			],
+			[
+				"pa",
+				"parsePath"
+			],
+			[
+				"obs",
+				"observable"
+			],
+			[
+				"ko",
+				"knockout"
+			],
+			[
+				"samm",
+				"sammyOutputPath"
+			],
+			[
+				"input",
+				"inputIndex"
+			],
+			[
+				"out",
+				"outputIndex"
+			],
+			[
+				"cle",
+				"cleanServer"
+			],
+			[
+				"clean",
+				"cleanServer"
+			],
+			[
+				"copy",
+				"copyHtml"
+			],
+			[
+				"bu",
+				"buildApp"
+			],
+			[
+				"buil",
+				"buildClient"
+			],
+			[
+				"std",
+				"stderr"
+			],
+			[
+				"req",
+				"requireOutputPath"
+			],
+			[
+				"co",
+				"copyBootstrapJs"
+			],
+			[
+				"cop",
+				"copyKnockoutJs"
+			],
+			[
+				"boo",
+				"bootstrapOutputPath"
+			],
+			[
+				"bo",
+				"bootstrapInputPath"
+			],
+			[
+				"kno",
+				"knockout"
+			],
+			[
+				"kn",
+				"knockout"
+			],
+			[
+				"knoc",
+				"knockoutOutputPath"
+			],
+			[
+				"jq",
+				"jqueryInputPath"
+			],
+			[
+				"jqu",
+				"jqueryPath"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 880,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"co tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set co",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"clean se",
+				"Build: Build client and server"
+			],
+			[
+				"buil",
+				"Build: Build all"
+			],
+			[
+				"clea all",
+				"Build: Clean all"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"togg",
+				"Toggle Comment"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/mai-speciale.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/1.introduction.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/2.public-sphere-basic-concepts-and-power.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/3.jordan.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/4.introduction-to-analysis.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/5.the-system.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/6.the-country.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/7.march-24.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/8.the-region.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/9.beyond-march-24.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/10.why-no-revolution-in-jordan.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/11.conclusion.tex",
+		"/Users/Kaare/Documents/AU/LaTeX/mai-speciale/12.bibliography.tex",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/app.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/player/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/player.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/list.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/library.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/item.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/addon.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/movies/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/README.md",
+		"/Users/Kaare/Sites/xbmc-web/project.sublime-project",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/tvshows/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/index.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/global.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/gui.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/files.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/configuration.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/audio.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/array.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/application.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/vendor/jquery/jquery.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/bootstrap.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/base/api.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/base/client.coffee",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/addon.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/clients/wsclient.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/movies/templates/movies.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/less/style.less",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/player/player.html",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/list.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/global.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/audio.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/application.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/addons.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/application.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/audiolibrary.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/files.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/gui.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/input.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/jsonrpc.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/playlist.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/pvr.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/system.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/videolibrary.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/api/xbmc.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/media.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/clients/xbmcclient.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/xbmc.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/server/server.coffee",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/array.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/_string.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/configuration.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/_string.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/types/_base.coffee",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/lib/xbmc/types/item.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/./clients/wsclient.coffee",
+		"/Users/Kaare/Sites/xbmc-web/Cakefile",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/settings/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/remote/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/music/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/home/templates/home.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/home/templates/inner.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/lib/xbmc/wsclient.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/home/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/base/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/routes.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/base/router.coffee",
+		"/Users/Kaare/Sites/xbmc-web/package.json",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/base/viewmodel.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/home/viewmodel.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/vendor/underscore/underscore.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/vendor/knockout/knockout.js",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/app.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/vendor/sammy/sammy.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/home/templates/main.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/music/templates/music.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/remote/templates/remote.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/settings/templates/settings.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/tvshows/templates/tvshows.html",
+		"/Users/Kaare/Sites/xbmc-web/build/client/js/app/routes.js",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/base/viewmodel.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/vendor/bootstrap/bootstrap-all.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/app/boostrap.coffee",
+		"/Users/Kaare/Sites/xbmc-web/src/client/index.html",
+		"/Users/Kaare/Sites/xbmc-web/src/client/./app/index.html",
+		"/Users/Kaare/Sites/xbmc-web/node_modules/coffee-script/lib/coffee-script/cake.js",
+		"/usr/local/lib/node_modules/coffee-script/lib/coffee-script/cake.js",
+		"/Users/Kaare/Sites/Anchosen/src/coffee/anchosen/bindings/search_field.coffee",
+		"/Users/Kaare/Sites/Anchosen/src/less/mixins.less",
+		"/Users/Kaare/Sites/Anchosen/src/less/anchosen.less",
+		"/Users/Kaare/.ssh/id_rsa",
+		"/Users/Kaare/Sites/Anchosen/src/coffee/anchosen/view_model.coffee",
+		"/Users/Kaare/Sites/Anchosen/LICENSE.md",
+		"/Users/Kaare/Sites/Anchosen/README.md",
+		"/Users/Kaare/Sites/Anchosen/test.html",
+		"/Users/Kaare/Sites/Anchosen/src/coffee/anchosen/anchosen.coffee",
+		"/Users/Kaare/Sites/Anchosen/src/coffee/anchosen/main.coffee",
+		"/Users/Kaare/Sites/Anchosen/Cakefile",
+		"/Users/Kaare/Sites/Anchosen/package.json",
+		"/Users/Kaare/.ssh/authorized_keys",
+		"/Users/Kaare/Sites/Anchosen/bin/js/knockout.js",
+		"/Users/Kaare/Sites/Anchosen/src/coffee/bootstrap.coffee",
+		"/Users/Kaare/Sites/Anchosen/project.sublime-project",
+		"/Users/Kaare/Sites/valcon/fuel/packages/accesscontrol/classes/model/abstractuipermission.php",
+		"/Users/Kaare/Sites/valcon/fuel/app/classes/model/role.php",
+		"/Users/Kaare/Sites/valcon/fuel/packages/doctrine2/Doctrine/ORM/Query/ResultSetMapping.php",
+		"/Users/Kaare/Sites/valcon/fuel/app/tasks/createtestdata.php",
+		"/Users/Kaare/Sites/valcon/project.sublime-project",
+		"/Users/Kaare/Sites/valcon/fuel/packages/doctrine2/classes/model/base.php",
+		"/Users/Kaare/Sites/valcon/fuel/packages/accesscontrol/tasks/acl.php",
+		"/Users/Kaare/Sites/valcon/fuel/packages/accesscontrol/classes/model/deleteuipermission.php",
+		"/Users/Kaare/Sites/valcon/fuel/packages/accesscontrol/classes/model/readpermission.php",
+		"/Users/Kaare/Sites/valcon/fuel/packages/accesscontrol/classes/types/permission.php",
+		"/Users/Kaare/Sites/valcon/valcon-client/coffee/dummylogin/controller.coffee",
+		"/Users/Kaare/Sites/valcon/fuel/packages/data-importer/classes/Database/CreateTempTable.php",
+		"/Users/Kaare/Sites/NIRASKon/CORE/SCISCO/PLUGINS/surveys/schema/print/generatePage.php"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/Kaare/Sites/xbmc-web/src/client/less",
+			"/Users/Kaare/Sites/xbmc-web/src/client",
+			"/Users/Kaare/Sites/Anchosen",
+			"<open folders>,/Users/Kaare/Sites/Anchosen",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"\n",
+			"fixed",
+			"PlayPa",
+			"Play",
+			"play",
+			"Play",
+			"\":",
+			", ",
+			"\":",
+			", ",
+			"\":",
+			", ",
+			"\":",
+			"{",
+			"}",
+			", ",
+			"\":",
+			", ",
+			"\":",
+			"}",
+			" {",
+			", ",
+			"\":",
+			" {",
+			"}",
+			", ",
+			"\":",
+			"class Addon.",
+			"Addon.",
+			"\":",
+			", ",
+			"\":",
+			", ",
+			"\":",
+			", ",
+			" {",
+			"\":",
+			"}",
+			" {",
+			", ",
+			"\":",
+			", ",
+			" {",
+			"}, ",
+			"\":",
+			"}",
+			" {",
+			", ",
+			"\":",
+			"extends",
+			"extend",
+			"extends",
+			"}",
+			"}\n",
+			" {",
+			", ",
+			"\":",
+			"s\": {",
+			"\":",
+			", ",
+			":",
+			", ",
+			":",
+			", ",
+			"\":",
+			"}, ",
+			" {",
+			"isfunction",
+			"Function",
+			"Array",
+			"Object",
+			"String",
+			"d = \"#{@_",
+			"method = \"#{@_",
+			"method = \"#{@_A",
+			"method = \"#{@",
+			"method = \"#{@_",
+			"method = \"#{@",
+			"method = \"#{",
+			"method = \"#",
+			"method = \"",
+			"method = \"#{@_API}",
+			"method = \"#{@_API}.",
+			"# @callback",
+			"# @var Object | Function callback",
+			"# @var [ object context ]",
+			"# @var Object | Function callback",
+			": () ->",
+			"() ->",
+			": (options) ->",
+			"() ->",
+			": () ->",
+			" () ->",
+			"() ->",
+			": () ->",
+			"@callback =",
+			": () ->",
+			"() ->",
+			"@callback String",
+			"@var String",
+			": (options) ->",
+			": () ->",
+			"(options) ->",
+			": () ->",
+			"\n		# @permission",
+			"@see http://wiki.xbmc.org/index.php?title=JSON-RPC_API/v6#",
+			": (options) ->",
+			": () ->",
+			"callbacks",
+			"getEvent",
+			"getCallbacks",
+			": () ->",
+			"SetAddonEnabled",
+			": () ->",
+			"eventObj",
+			"callbacks",
+			"?\n",
+			"runQueue",
+			"getId",
+			"_bindings",
+			"->\"#{@",
+			"event",
+			"namespace",
+			"on: func",
+			"bind",
+			"VideoLibrary.",
+			"app/lib/xbmc/",
+			"types"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@var string",
+			"xbmc/",
+			"$1 \\\\\\\\",
+			"\\\\emph{Interview$1}\\t&\\t$2 \\\\\\\\",
+			"\\emph{Interview$1}\\t&\\t$2 \\\\\\\\",
+			"Interview$1\\t&\\t$2 \\\\\\\\",
+			"Interview$1\\t&\\t$2 \\\\",
+			"Interview$1\\t&\\t$2",
+			"debug_printf",
+			"endian",
+			"  ",
+			"LIT (LIT_INT $1)",
+			"type_check",
+			"DISKPAGESIZE",
+			"MemoryMappedRegion",
+			"MemoryMapper",
+			"Varset.t VarMap.t",
+			"fold_right",
+			"fold_left",
+			"constructor"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								595,
+								595
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 28.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 87.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"jq",
+				"client/vendor/jquery/jquery.js"
+			],
+			[
+				"serve",
+				"server/server.coffee"
+			],
+			[
+				"server",
+				"server/server.coffee"
+			],
+			[
+				"under",
+				"client/vendor/underscore/underscore.js"
+			],
+			[
+				"knock",
+				"client/vendor/knockout/knockout.js"
+			],
+			[
+				"kno",
+				"client/vendor/knockout/knockout.js"
+			],
+			[
+				"homeview",
+				"client/app/home/viewmodel.coffee"
+			],
+			[
+				"samm",
+				"client/vendor/sammy/sammy.js"
+			],
+			[
+				"knoc",
+				"bin/js/knockout.js"
+			],
+			[
+				"doctrinmodelbase",
+				"fuel/packages/doctrine2/classes/model/base.php"
+			],
+			[
+				"deleteui",
+				"fuel/packages/accesscontrol/classes/model/deleteuipermission.php"
+			],
+			[
+				"abstra",
+				"fuel/packages/accesscontrol/classes/model/abstractuipermission.php"
+			],
+			[
+				"permission",
+				"fuel/packages/accesscontrol/classes/model/readpermission.php"
+			],
+			[
+				"rol",
+				"fuel/app/classes/model/role.php"
+			],
+			[
+				"resultmap",
+				"fuel/packages/doctrine2/Doctrine/ORM/Query/ResultSetMapping.php"
+			],
+			[
+				"createtes",
+				"fuel/app/tasks/createtestdata.php"
+			],
+			[
+				"createte",
+				"fuel/app/tasks/createtestdata.php"
+			],
+			[
+				"createt",
+				"fuel/packages/data-importer/classes/Database/CreateTempTable.php"
+			],
+			[
+				"signature",
+				"vmobjects/Signature.c"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 296.0,
+	"status_bar_visible": true
+}

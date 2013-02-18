@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  pem_certificate: MyText
+  pem_private_key: MyText
+
+two:
+  name: MyString
+  pem_certificate: MyText
+  pem_private_key: MyText
