@@ -32,10 +32,12 @@ module SslHelper
 		cert.subject = OpenSSL::X509::Name.parse subject_name
 
 		if params.has_key? :issuer
+			# We're signed by a ca
 			issuer_name = params[:issuer].subject
 			issuer = params[:issuer]
 			issuer_key = params[:issuer_key]
 		else
+			# It's a self sign
 			issuer_name = cert.subject
 			issuer = cert
 			issuer_key = key
@@ -51,11 +53,13 @@ module SslHelper
 
 		cert.add_extension(ef.create_extension("subjectKeyIdentifier", "hash", false))
 		if params.has_key? :is_ca && params[:is_ca]
+			# Add the extensions that marks this certificate as a CA
 			cert.add_extension(ef.create_extension("basicConstraints", "CA:TRUE", true))
 			cert.add_extension(ef.create_extension("keyUsage", "keyCertSign, cRLSign", true))
 			cert.add_extension(ef.create_extension("authorityKeyIdentifier", "keyid:always", false))
 			cert.add_extension(ef.create_extension("crlDistributionPoints", "URI:" + params[:crl_uri], true))
 		else
+			# Add the extension that marks this for a digital signature usage
 			cert.add_extension(ef.create_extension("keyUsage", "digitalSignature", true))
 
 		end
