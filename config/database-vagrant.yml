@@ -1,0 +1,28 @@
+# Example config file for use with vagrant, should easily able to copy paste this file to
+# database.yml and use without modifications
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: contractor_dev
+  pool: 5
+  username: vagrant
+  password: vagrant
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: contractor_test
+  pool: 5
+  username: vagrant
+  password: vagrant
+
+
+## Do not run with vagrant in production, please
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: unsupported
+  pool: 5
+  username: unsupported
+  password:
