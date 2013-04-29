@@ -23,9 +23,9 @@ Vagrant.configure("2") do |config|
 	end
 
 	config.vm.provision :puppet do |puppet|
-		# Below is useful for debugging
 		puppet.module_path = "puppet/modules"
 		puppet.manifests_path = "puppet/manifests"
+		# Below is useful for debugging
 		puppet.options = "--verbose --debug"
 	end
 end
