@@ -17,8 +17,14 @@ class CertificatesControllerTest < ActionController::TestCase
   end
 
   test "should create certificate" do
-    assert_difference('Certificate.count') do
-      post :create, certificate: {  }
+    assert_difference('Certificate.count', 1) do
+      post :create, certificate: {
+        :name => "Test",
+        :email => "test@test.com",
+        :common_name => "Test",
+        :expires => Time.now+3600,
+        :issuer_certificate => ""
+      }
     end
 
     assert_redirected_to certificate_path(assigns(:certificate))
@@ -29,17 +35,7 @@ class CertificatesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get edit" do
-    get :edit, id: @certificate
-    assert_response :success
-  end
-
-  test "should update certificate" do
-    put :update, id: @certificate, certificate: {  }
-    assert_redirected_to certificate_path(assigns(:certificate))
-  end
-
-  test "should destroy certificate" do
+  test "should revoke certificate" do
     assert_difference('Certificate.count', -1) do
       delete :destroy, id: @certificate
     end

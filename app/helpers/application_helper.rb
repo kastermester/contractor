@@ -17,16 +17,14 @@ module ApplicationHelper
 		end
 
 		def collection_select_for(record, options, value_method, text_method, html_options = {})
-			puts @object.class.model_name.i18n_key.inspect
 			collection_select record, options, value_method, text_method, html_options
 		end
 
 		def control_group_for(record, &block)
-			puts @template.class
 			raise ArgumentError "Missing block" unless block_given?
 			helper = FieldHelper.new self, record
 			@template.content_tag("div",
-				label(record) + 
+				label(record) +
 				@template.content_tag("div",
 					@template.capture(helper, &block),
 					:class => "controls"),
@@ -35,7 +33,7 @@ module ApplicationHelper
 
 		def editor_for(record, options = {})
 			editor = nil
-			
+
 			type = @object[record].class
 
 			if @object[record].class == nil.class
@@ -45,7 +43,6 @@ module ApplicationHelper
 			inline_editor_into_label = false
 			inline_editor_label_class = nil
 
-			puts type.inspect
 			if type == String
 				if options[:long]
 					options.delete :long
@@ -105,11 +102,7 @@ module ApplicationHelper
 		def method_missing(m, *args, &block)
 			method = m.to_s
 			method += "_for"
-			puts method.inspect
-			puts @parent.respond_to? method.to_sym
 			arguments = [@attribute].concat(args)
-			puts method.inspect
-			puts arguments.inspect
 			method = method.to_sym
 			if @parent.respond_to? method
 				@parent.send method, *arguments, &block

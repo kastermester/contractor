@@ -67,4 +67,35 @@ module SslHelper
 
 		return { :key => key, :certificate => cert }
 	end
+
+	def self.generate_crl(cert, key, revoked_certs_info = [], crl_number = 1, expires_after_seconds = 3600)
+		now = Time.now
+
+		crl = OpenSSL::X509::CRL.new
+		crl.issuer = cert.subject
+		crl.version = 1
+		crl.last_update = now
+		crl.next_update = now + expires_after_seconds
+
+		# Loop through all the revoked certificates and mark each certificate as revoked
+		revoked_certs_info.each do |revoked_cert|
+			revoked = OpenSSL::X509::Revoked.new
+			revoked.serial = revoked_cert.serial
+			revoked.time = revoked_cert.revoked_time
+			revoked_reason = OpenSSL::ASN1::Enumerated(revoked_cert.reason_code)
+			revoked_ext = OpenSSL::X509::Extension.new("CRLReason", revoked_reason)
+			revoked.add_extension(revoked_ext)
+			crl.add_revoked(revoked)
+		end
+
+		ef = OpenSSL::X509::ExtensionFactory.new
+		ef.issuer_certificate = cert
+		ef.crl = crl
+		crlnum = OpenSSL::ASN1::Integer(crl_number)
+		crl.add_extension(OpenSSL::X509::Extension.new("crlNumber", crlnum))
+
+		crl.sign(key, OpenSSL::Digest::SHA256.new)
+
+		return crl
+	end
 end

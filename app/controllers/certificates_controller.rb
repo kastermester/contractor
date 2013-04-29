@@ -41,14 +41,12 @@ class CertificatesController < ApplicationController
 	def create
 		params[:certificate].delete :issuer_certificate if params[:certificate][:issuer_certificate] == ""
 		params[:certificate][:issuer_certificate] = Certificate.find(params[:certificate][:issuer_certificate]) if params[:certificate].has_key? :issuer_certificate
-		params[:certificate].inspect
 		@certificate = Certificate.new(params[:certificate])
 
 		expires_timewithzone = @certificate.expires
 
 		valid_for_time = expires_timewithzone - Time.zone.now
 
-		puts @certificate.is_ca.inspect
 		ssl_hash = { :common_name => @certificate.common_name, :email => @certificate.email, :valid_for_days => valid_for_time / (60*60), :is_ca => @certificate.is_ca, :key_size => 4096 }
 
 		if @certificate.issuer_certificate == nil
@@ -90,7 +88,7 @@ class CertificatesController < ApplicationController
 	# GET /certificates/1/crl
 	def crl
 		@certificate = Certificate.find(params[:id])
-		
+
 	end
 
 	# DELETE /certificates/1
