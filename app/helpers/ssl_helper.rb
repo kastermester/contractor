@@ -13,6 +13,21 @@ module SslHelper
 		OpenSSL::X509::Certificate.new pem_certificate
 	end
 
+	# params:
+	#   required:
+	#     :key_size => bits
+	#     :serial => int
+	#     :common_name => string
+	#     :email => string
+	#     :valid_for_days => int
+	#   optional:
+	#     :country => string
+	#     :organization => string
+	#     :organization_unit => string (only if :organization is entered)
+	#   for CA sign:
+	#     :is_ca => true
+	#     :issuer => certificate
+	#     :issuer_key => private key
 	def self.generate_certificate(params)
 		key = OpenSSL::PKey::RSA.new params[:key_size]
 		cert = OpenSSL::X509::Certificate.new
@@ -46,13 +61,13 @@ module SslHelper
 		cert.issuer = issuer_name
 		cert.public_key = key.public_key
 		cert.not_before = Time.now
-		cert.not_after = Time.now + 60 * 60 * 25 * params[:valid_for_days]
+		cert.not_after = Time.now + 60 * 60 * 24 * params[:valid_for_days]
 		ef = OpenSSL::X509::ExtensionFactory.new
 		ef.subject_certificate = cert
 		ef.issuer_certificate = issuer
 
 		cert.add_extension(ef.create_extension("subjectKeyIdentifier", "hash", false))
-		if params.has_key? :is_ca && params[:is_ca]
+		if params.has_key?(:is_ca) && params[:is_ca]
 			# Add the extensions that marks this certificate as a CA
 			cert.add_extension(ef.create_extension("basicConstraints", "CA:TRUE", true))
 			cert.add_extension(ef.create_extension("keyUsage", "keyCertSign, cRLSign", true))
@@ -68,7 +83,82 @@ module SslHelper
 		return { :key => key, :certificate => cert }
 	end
 
-	def self.generate_crl(cert, key, revoked_certs_info = [], crl_number = 1, expires_after_seconds = 3600)
+
+	def self.get_crl_revocation_reason_from_code(code)
+		code = self.get_crl_reason(code)
+		case code
+		when 0
+			return "Unspecified"
+		when 1
+			return "Key Compromise"
+		when 2
+			return "CA Compromise"
+		when 3
+			return "Affiliation Changed"
+		when 4
+			return "Superseded"
+		when 5
+			return "Cessation Of Operation"
+		when 6
+			return "Certificate Hold"
+		# 7 seems to be an invalid code... why, I would love to know
+		when 8
+			return "Remove From CRL"
+		when 9
+			return "Privilege Withdrawn"
+		when 10
+			return "AA Compromise"
+		else
+			raise ArgumentError, 'Argument is out of range'
+		end
+	end
+
+	def self.get_crl_reason(reason)
+		return reason if reason.is_a? Integer
+		case reason
+		when :unspecified
+			return 0
+		when :key_compromise
+			return 1
+		when :ca_compromise
+			return 2
+		when :affiliation_changed
+			return 3
+		when :superseded
+			return 4
+		when :cessation_of_operation
+			return 5
+		when :certificate_hold
+			return 6
+		when :remove_from_crl
+			return 8
+		when :privilege_withdrawn
+			return 9
+		when :aa_compromise
+			return 10
+		else
+			raise ArgumentError, 'Argument is out of range'
+		end
+	end
+
+	# params:
+	#   required:
+	#     :certificate => certificate
+	#     :certificate_key => private key
+	#   optional:
+	#     :revoked_certs_info => array of {
+	#       :serial => int
+	#       :revoked_time => time of revocation
+	#       :reason => int or symbol - for meaning/acceptable values see get_crl_reason
+	#     } - default []
+	#     :crl_number => int - default 1
+	#     :expires_after_seconds => int - default 3600
+	def self.generate_crl(params)
+		cert = params[:certificate]
+		key = params[:certificate_key]
+		revoked_certs_info = params[:revoked_certs_info] or []
+		crl_number = params[:crl_number] or 1
+		expires_after_seconds = params[:expires_after_seconds] or 3600
 		now = Time.now
 
 		crl = OpenSSL::X509::CRL.new
@@ -80,9 +170,10 @@ module SslHelper
 		# Loop through all the revoked certificates and mark each certificate as revoked
 		revoked_certs_info.each do |revoked_cert|
 			revoked = OpenSSL::X509::Revoked.new
-			revoked.serial = revoked_cert.serial
-			revoked.time = revoked_cert.revoked_time
-			revoked_reason = OpenSSL::ASN1::Enumerated(revoked_cert.reason_code)
+			revoked.serial = revoked_cert[:serial]
+			revoked.time = revoked_cert[:revoked_time]
+			reason = self.get_crl_reason(revoked_cert[:reason])
+			revoked_reason = OpenSSL::ASN1::Enumerated(reason)
 			revoked_ext = OpenSSL::X509::Extension.new("CRLReason", revoked_reason)
 			revoked.add_extension(revoked_ext)
 			crl.add_revoked(revoked)
